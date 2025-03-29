@@ -1,26 +1,175 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+/* Fonts */
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url("../fonts/clash-grotesk/extralight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url("../fonts/clash-grotesk/light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url("../fonts/clash-grotesk/regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url("../fonts/clash-grotesk/medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url("../fonts/clash-grotesk/semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url("../fonts/clash-grotesk/bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
 
 /* variable */
 :root {
-  --sans-serif: "Lato", serif;
-  --serif: "Playfair Display", serif;
-  --primary: red;
-  --light: white;
-  --white: #b4b2ad;
-  --secondary: #787276;
-  --dark: #000;
+  --sans-serif: "Clash Grotesk", sans-serif;
+
+  --primary: #925fff;
+
+  --light: #ffffff;
+  --light-alt: #f9f8ff;
+
+  --dark: #101928;
+  --dark-alt: #2c2c2e;
 }
+
 /* reset styling */
 * {
   margin: 0;
   padding: 0;
+  outline: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-color: var(--primary) transparent;
+  scrollbar-width: thin;
+}
+*::selection {
+  background: var(--primary);
+  color: var(--dark);
+}
+::-webkit-scrollbar {
+  width: 5px;
+  background: var(--dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--sans-serif);
+  background: var(--light);
+  overflow-x: hidden;
+  position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+b,
+i,
+u,
+ul,
+ol,
+li,
+span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  line-height: 100%;
+}
+a:hover {
+  text-decoration: none;
+}
+img,
+video {
+  width: 100%;
+}
+p {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--dark-alt);
+  line-height: 160%;
+  letter-spacing: 0.5px;
+}
+p a {
+  color: var(--primary);
+  transition: 0.5s ease all;
+}
+p a:hover {
+  color: var(--primary);
+}
+p b {
+  font-weight: 600;
+}
+
+/* Background */
+.bg-primary {
+  background: var(--primary) !important;
+}
+.bg-light {
+  background: var(--light) !important;
+}
+.bg-light-alt {
+  background: var(--light-alt) !important;
+}
+.bg-dark {
+  background: var(--dark) !important;
+}
+.bg-dark-alt {
+  background: var(--dark-alt) !important;
+}
+
+/* Color */
+.text-primary {
+  color: var(--primary) !important;
+}
+.text-light {
+  color: var(--light) !important;
+}
+.text-light-alt {
+  color: var(--light-alt) !important;
+}
+.text-dark {
+  color: var(--dark) !important;
+}
+.text-dark-alt {
+  color: var(--dark-alt) !important;
 }
 
 /* section */
 .section {
   width: 100%;
   padding: 100px 0;
+  background: var(--light);
+  position: relative;
+  overflow: hidden;
 }
 
 /* heading */
@@ -28,42 +177,72 @@
   color: var(--dark);
   font-size: 28px;
   font-weight: bold;
-  font-family: var(--sans-serif);
 }
 .h1 {
   color: var(--dark);
-  font-size: 90px;
-  font-family: var(--sans-serif);
+  font-size: 50px;
   text-transform: capitalize;
 }
 .h2 {
   color: var(--dark);
   font-size: 50px;
-  font-family: var(--sans-serif);
   text-transform: capitalize;
 }
 
-.bg-dark {
-  background: var(--dark) !important;
-}
-.text-white {
-  color: var(--white) !important;
-}
-img {
-  width: 100%;
-}
-
-/* .button {
-  display: inline-block;
-  text-decoration: none;
-  background: linear-gradient(45deg, #544c5b, var(--dark));
+/* Button */
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: var(--dark);
   color: var(--light);
-  width: 150px;
-  border-radius: 6px !important;
-  padding: 8px 0;
-  font-size: 12px;
+  padding: 20px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s ease all;
 }
-.button i {
-  padding-left: 8px;
-  font-size: 12px;
-} */
+.button span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.button .icon {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.button .icon i {
+  position: absolute;
+  top: 50%;
+  transition: 0.5s ease transform;
+}
+.button .icon i:nth-child(1) {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.button .icon i:nth-child(2) {
+  left: 50%;
+  transform: translate(-200%, -50%);
+}
+.button:hover {
+  background: var(--primary);
+  color: var(--light);
+}
+.button:hover .icon i:nth-child(1) {
+  transform: translate(200%, -50%);
+}
+.button:hover .icon i:nth-child(2) {
+  transform: translate(-50%, -50%);
+}
+.button.button-alt {
+  background: var(--light);
+  color: var(--dark);
+}
+.button.button-alt:hover {
+  background: var(--primary);
+  color: var(--light);
+}

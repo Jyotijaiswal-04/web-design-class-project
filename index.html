@@ -3,89 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Clarity</title>
+
+    <!-- Links -->
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <!-- Header -->
     <header class="header">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="logo" href="">
-            <img src="./images/logo.svg" alt="Logo" class="logo-img" />
+          <a class="logo" href="./index.html">
+            <img src="./assets/images/logo.svg" alt="Logo" class="logo-img" />
           </a>
 
           <button
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="fas fa-bars text-light"></i>
+            <i class="fal fa-bars"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto text-center">
+
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
-                >
+                <a class="nav-link" href="./index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">Feature</a>
+                <a class="nav-link" href="./about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="project.html">Pricing</a>
+                <a class="nav-link" href="./features.html">Feature</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="project.html">Blog</a>
+                <a class="nav-link" href="./pricing.html">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="project.html">About</a>
+                <a class="nav-link" href="./blog.html">Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="./contact.html">Contact</a>
               </li>
             </ul>
+
+            <a href="./index.html" class="button">
+              <span>Get Started</span>
+              <div class="icon">
+                <i class="fal fa-arrow-right"></i>
+                <i class="fal fa-arrow-right"></i>
+              </div>
+            </a>
           </div>
-          <button class="btn btn-dark rounded-pill btn-get p-3 ms-4 me-5">
-            Get Started
-            <i class="fal fa-arrow-alt-right icon"></i>
-          </button>
         </div>
       </nav>
     </header>
-    <section class="hero">
-      <div class="container">
-        <p class="h1">Your Committed Partner in Total Web Security</p>
-        <p class="p1">
-          Discover cutting-edge solutions for comprehensive data security,
-          ensuring your digital world remains safe and protected.
-        </p>
-        <div class="button-hero mt-4">
-          <button class="btn btn-dark rounded-pill p-3 ms-4 me-5">
-            Get Started
-            <i class="fal fa-arrow-alt-right icon"></i>
-          </button>
-          <button class="btn btn-light rounded-pill p-3 ms-4 me-5">
-            Learn more
-            <i class="fal fa-arrow-alt-right icon text-dark"></i>
-          </button>
+
+    <!-- Hero -->
+    <section class="section hero">
+      <div class="container relative">
+        <div class="text">
+          <h1 class="h1">Your Committed Partner in Total Web Security</h1>
+          <p>
+            Discover cutting-edge solutions for comprehensive data security,
+            ensuring your digital world remains safe and protected.
+          </p>
+          <div
+            class="d-flex justify-content-center align-items-center gap-3 mt-5"
+          >
+            <a href="#" class="button">
+              <span>Get Started</span>
+              <div class="icon">
+                <i class="fal fa-arrow-right"></i>
+                <i class="fal fa-arrow-right"></i>
+              </div>
+            </a>
+            <a href="#" class="button button-alt">
+              <span>Learn More</span>
+              <div class="icon">
+                <i class="fal fa-arrow-right"></i>
+                <i class="fal fa-arrow-right"></i>
+              </div>
+            </a>
+          </div>
         </div>
+        <img
+          src="./assets/images/hero-background.svg"
+          alt="Hero Image"
+          class="image"
+        />
       </div>
     </section>
-    <section class="dashboard">
-      <div class="container">
-        <img src="./images/dashboard-image.webp" alt="" />
-      </div>
-    </section>
-    <section class="marquee section">
+
+    <!-- Marquee -->
+    <section class="section marquee">
       <div class="container mt-5">
         <p class="heading text-center">
           Trusted by thousands of companies worldwide
@@ -93,37 +113,38 @@
         <div class="slider">
           <div class="slides-track">
             <div class="slide">
-              <img src="./images/logo1.svg" alt="" />
+              <img src="./assets/images/logo1.svg" alt="" />
             </div>
             <div class="slide">
-              <img src="./images/logo2.svg" alt="" />
+              <img src="./assets/images/logo2.svg" alt="" />
             </div>
             <div class="slide">
-              <img src="./images/logo3.svg" alt="" />
+              <img src="./assets/images/logo3.svg" alt="" />
             </div>
             <div class="slide">
-              <img src="./images/logo4.svg" alt="" />
+              <img src="./assets/images/logo4.svg" alt="" />
             </div>
             <div class="slide">
-              <img src="./images/logo5.svg" alt="" />
+              <img src="./assets/images/logo5.svg" alt="" />
             </div>
             <div class="slide">
-              <img src="./images/logo6.svg" alt="" />
+              <img src="./assets/images/logo6.svg" alt="" />
             </div>
             <div class="slide">
-              <img src="./images/logo6.svg" alt="" />
+              <img src="./assets/images/logo6.svg" alt="" />
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer section">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
             <div class="logo-footer mt-5">
-              <img src="./images/logo-footer.svg" alt="img" />
+              <img src="./assets/images/logo-footer.svg" alt="img" />
               <h5 class="mt-4">Subscribe to Our Newsletter!</h5>
               <p class="mt-4">
                 Streamline operations with cutting-edge solutions that
@@ -170,5 +191,9 @@
         <p>Copyright © 2025 Themefisher. All Rights Reserved</p>
       </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>

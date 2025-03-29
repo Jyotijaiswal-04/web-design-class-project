@@ -1,91 +1,48 @@
 @import url(./variable.css);
-/* header */
-/* header  css start*/
+
+/* Header */
 .header {
   padding: 10px 0;
-  position: sticky;
-  top: 0;
-  z-index: 9;
-}
-
-.header .navbar-nav {
-  color: var(--dark);
-  padding: 0 15px;
-  text-align: center;
-  justify-content: center;
-}
-
-.navbar-nav .nav-item .nav-link {
   position: relative;
-  display: inline-block;
-  color: var(--dark);
-  transition: 0.3s all ease-in-out;
-  padding: 15px 15px;
+  z-index: 9;
+  background: var(--light);
+}
+.header .navbar-toggler {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  background: var(--dark);
+  color: var(--light);
+}
+.header .navbar-nav {
+  gap: 20px;
+}
+.header .navbar-nav .nav-link {
   font-size: 16px;
-  font-weight: 600;
-}
-.navbar-nav .nav-item .nav-link:hover {
-  color: var(--secondary);
+  font-weight: 500;
+  color: var(--dark);
 }
 
-.btn i {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--light);
-}
-.header .menu {
-  font-size: 30px;
-  margin-right: 30px;
-  display: none;
-}
-.btn:hover {
-  background-color: rgb(165, 82, 244);
-  color: var(--light);
-  outline: none;
-  border: none;
-}
-.navbar-toggler {
-  background-color: black;
-}
-.header .btn-get {
-  width: 200px;
-}
-/* header css closed */
-/* hero section */
-.hero {
-  margin-top: 70px;
-  background-image: url(../images/background\ image.svg);
-  background-size: cover;
-  background-position: center;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hero .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.hero .h1 {
-  width: 70%;
-  font-family: poopins, serif;
-  font-size: 70px;
+/* Hero Section */
+.hero .text {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
   text-align: center;
-  font-weight: bold;
 }
-.hero .p1 {
-  width: 35%;
-  text-align: center;
+.hero .image {
+  position: absolute;
+  z-index: 1;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 700px;
 }
 
-.btn {
-  width: 200px;
-}
-/* marquee */
+/* marquee  smjh nhi rha yeh okay ruko batata hu*/
 /* .marquee .marquee-img img {
   width: 100%;
   height: 50px;
@@ -170,25 +127,27 @@
   border-bottom: 1px solid rgba(85, 83, 83, 0.81);
 }
 
-/* media query */
-@media screen and (max-width: 720px) {
-  header .collaps,
-  .btn-get {
-    display: none;
+/* Media Query */
+@media (max-width: 1280px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 767px) {
+  .g-5,
+  .gx-5 {
+    --bs-gutter-x: 0 !important;
   }
-  header .btn {
-    display: none;
+  .header .navbar-nav {
+    gap: 5px;
+    margin-bottom: 10px;
   }
-
-  header {
-    padding: 20px;
+  .header .navbar-nav .nav-item {
+    padding-left: 20px;
   }
-  .hero .h1 {
-    font-size: 40px;
-  }
-  .btn {
-    display: block;
-    width: 150px;
-    margin-top: 10px;
-  }
+}
+@media (max-width: 600px) {
 }
