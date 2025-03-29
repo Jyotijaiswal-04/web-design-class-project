@@ -1,0 +1,27 @@
+<svg
+  viewBox="0 0 1440 2"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <path id="theMotionPathCenter" d="M1440 0.5H0" stroke="#EAEAEA"></path>
+  <style>
+    .line {
+      stroke: #9b59b6;
+      stroke-width: 2;
+    }
+  </style>
+  <g>
+    <line x1="-18" y1="1" x2="0" y2="1" class="line">
+      <animateMotion
+        dur="6s"
+        begin="0s"
+        fill="freeze"
+        repeatCount="indefinite"
+        rotate="auto"
+      >
+        <mpath xlink:href="#theMotionPathCenter"></mpath>
+      </animateMotion>
+    </line>
+  </g>
+</svg>
