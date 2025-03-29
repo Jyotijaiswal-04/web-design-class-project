@@ -183,6 +183,76 @@
   object-fit: contain;
 }
 
+/* Services Section */
+.services-section .services-card {
+  position: relative;
+  border-radius: 20px;
+  height: 100%;
+  overflow: hidden;
+}
+.services-section .services-card::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(var(--primary), var(--light));
+  border-radius: 100%;
+  opacity: 0;
+  transition: 0.5s ease all;
+  pointer-events: none;
+}
+.services-section .services-card:hover::after {
+  opacity: 0.1;
+  top: 20%;
+  left: 20%;
+}
+.services-section .services-card .card-body {
+  padding: 50px;
+  text-align: center;
+}
+.services-section .services-card .text h5 {
+  font-size: 25px;
+  color: var(--dark);
+}
+.services-section .services-card .text p {
+  margin-top: 15px;
+}
+.services-section .services-card .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  overflow: hidden;
+  background: var(--card-shade);
+  margin: auto;
+  margin-bottom: 30px;
+  position: relative;
+}
+.services-section .services-card .icon img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  transition: 0.5s ease all;
+}
+.services-section .services-card .icon img:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.services-section .services-card .icon img:nth-child(2) {
+  top: 50%;
+  transform: translate(-50%, 200%);
+}
+.services-section .services-card:hover .icon img:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -200%);
+}
+.services-section .services-card:hover .icon img:nth-child(2) {
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* Keyframes */
 @keyframes scroll {
   0% {
@@ -206,6 +276,13 @@
   .g-5,
   .gx-5 {
     --bs-gutter-x: 0 !important;
+  }
+  .h1 {
+    font-size: 35px;
+  }
+  .w-50,
+  .w-75 {
+    width: 100% !important;
   }
   .header .navbar-nav {
     gap: 5px;
