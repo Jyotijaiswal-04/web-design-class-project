@@ -175,8 +175,8 @@ p b {
 /* heading */
 .heading {
   color: var(--dark);
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 25px;
+  font-weight: 500;
 }
 .h1 {
   color: var(--dark);

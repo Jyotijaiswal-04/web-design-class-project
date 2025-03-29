@@ -21,6 +21,10 @@
   font-size: 16px;
   font-weight: 500;
   color: var(--dark);
+  transition: 0.5s ease all;
+}
+.header .navbar-nav .nav-link:hover {
+  color: var(--primary);
 }
 
 /* Hero Section */
@@ -125,51 +129,67 @@
   color: var(--primary);
 }
 
-/* marquee  smjh nhi rha yeh okay ruko batata hu*/
-/* .marquee .marquee-img img {
-  width: 100%;
-  height: 50px;
-} */
-.slider {
-  --totSlides: 6;
-  --slideWidth: 200px;
+/* Clients Section */
+.clients-section .slider {
+  --totalSlides: 6; /* half slides (if 12 then this will be 6) */
+  --slideWidth: 250px;
   --slideHeight: 100px;
-  --animationSpeed: calc(5s * var(--totSlides));
-  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
+  --animationSpeed: calc(5s * var(--totalSlides));
+
+  position: relative;
   height: var(--slideHeight);
   margin: auto;
   overflow: hidden;
   position: relative;
   width: 100%;
 }
-
-.slider .slides-track {
+.clients-section .slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 150px;
+  background: linear-gradient(to right, var(--light), transparent);
+  z-index: 2;
+}
+.clients-section .slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 150px;
+  background: linear-gradient(to left, var(--light), transparent);
+  z-index: 2;
+}
+.clients-section .slider .slides-track {
   animation: scroll var(--animationSpeed) linear infinite;
   display: flex;
   gap: 70px;
-  width: calc(var(--slideWidth) * var(--totSlides) * 2);
+  width: calc(var(--slideWidth) * var(--totalSlides) * 2);
+  position: relative;
+  z-index: 1;
 }
-
-.slider .slide {
+.clients-section .slider .slide {
   height: 100px;
   width: var(--slideWidth);
-  /* filter: grayscale(100); */
   overflow: hidden;
 }
-
-.slider .slide img {
+.clients-section .slider .slide img {
   height: 100%;
   width: auto;
   max-width: 100%;
   object-fit: contain;
 }
 
+/* Keyframes */
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(var(--slideWidth) * var(--totSlides) * -1));
+    transform: translateX(calc(var(--slideWidth) * var(--totalSlides) * -1));
   }
 }
 
