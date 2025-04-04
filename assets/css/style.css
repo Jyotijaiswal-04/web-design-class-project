@@ -614,9 +614,14 @@
 }
 
 /* Hero Inner Section */
+.hero-inner {
+  position: relative;
+  height: 100vh;
+}
 .hero-inner .container {
   position: relative;
   z-index: 3;
+  overflow: visible;
 }
 .hero-inner .image-pattern {
   position: absolute;

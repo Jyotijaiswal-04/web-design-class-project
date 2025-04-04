@@ -146,6 +146,9 @@ p b {
 .bg-dark-alt {
   background: var(--dark-alt) !important;
 }
+.bg-transparent {
+  background: transparent !important;
+}
 
 /* Color */
 .text-primary {
