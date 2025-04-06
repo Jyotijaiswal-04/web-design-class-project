@@ -1,3 +1,10 @@
+// Animation On Scroll
+AOS.init({
+  duration: 1200,
+  once: true,
+  easing: "ease-in-out-sine",
+});
+
 // Testimonial Carousel
 const testimonialCarousel = (selector) => {
   $(selector).owlCarousel({

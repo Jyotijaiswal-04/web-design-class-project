@@ -189,6 +189,7 @@
   border-radius: 20px;
   height: 100%;
   overflow: hidden;
+  border: 1px solid var(--border);
 }
 .services-section .services-card::after {
   content: "";
@@ -616,7 +617,7 @@
 /* Hero Inner Section */
 .hero-inner {
   position: relative;
-  height: 100vh;
+  overflow: visible;
 }
 .hero-inner .container {
   position: relative;
@@ -634,87 +635,365 @@
 .hero-inner .pattern {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 60px;
   position: absolute;
   top: 150px;
   left: 0;
   width: 100%;
 }
-.hero-inner .card {
-  margin-top: 250px;
-  border-radius: 30px;
+.hero-inner .info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
-.hero-inner .card .card-body {
+.hero-inner .info .author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.hero-inner .info .author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+.hero-inner .info .author span {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--dark);
+}
+.hero-inner .info .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.hero-inner .info .date i,
+.hero-inner .info .date span {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+/* Blog Card */
+.blog-card {
+  margin-top: 50px;
+  border-radius: 30px;
+  border: 1px solid var(--border);
+}
+.blog-card .card-body {
   padding: 30px;
 }
-.hero-inner .card .text b {
+.blog-card .text b {
   font-size: 16px;
   font-weight: 500;
   display: inline-block;
   margin-bottom: 20px;
 }
-.hero-inner .card .text h5 {
+.blog-card .text h5 {
   font-size: 35px;
   font-weight: 500;
   color: var(--dark);
-  line-height: 140%;
+  line-height: 130%;
   margin-bottom: 10px;
 }
-.hero-inner .card .image {
+.blog-card .image {
   overflow: hidden;
   position: relative;
+  overflow: hidden;
+  border-radius: 20px;
 }
-.hero-inner .card .image img {
+.blog-card .image img {
   transition: 0.5s ease all;
 }
-.hero-inner .card:hover .image img {
+.blog-card:hover .image img {
   scale: 1.1;
 }
-
-/* blog-post section */
-.blog-post .container {
-  position: relative;
-  z-index: 3;
+.blog-card .image .badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: var(--light);
+  color: var(--dark);
+  padding: 10px 20px;
+  border-radius: 50px;
+  z-index: 1;
+  font-size: 14px;
+  font-weight: 500;
 }
-.blog-post .card {
-  /* margin-top: 250px; */
-  border-radius: 30px;
+
+/* Blog Pagination */
+.blog-pagination {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 50px;
+  border-radius: 0;
+}
+.blog-pagination li a {
+  padding: 10px 15px;
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s ease all;
+}
+.blog-pagination li a.active {
+  background: var(--primary);
+  color: var(--light);
+}
+.blog-pagination li a:hover {
+  background: var(--light-alt);
+}
+
+/* FAQ Section */
+.faq-section .accordion-item {
+  position: relative;
+  background: var(--light-alt);
+  border: 0;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.faq-section .accordion-item:last-child {
+  margin-bottom: 0;
+}
+.faq-section .accordion-item .accordion-button {
+  border: 0;
+  box-shadow: none;
+  background: var(--light-alt);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--dark);
+}
+.faq-section .accordion-item .accordion-button::after {
+  content: "\f068";
+  font-family: "Font Awesome 5 Pro";
+  background: transparent;
+  font-size: 16px;
+  font-weight: 400;
+}
+.faq-section .accordion-item .accordion-button.collapsed::after {
+  content: "\f067";
+}
+
+/* About Section */
+.about-section .image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.about-section .card {
+  border: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #e1d1ff;
+  height: 100%;
+}
+.about-section .card .card-body {
+  padding: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   flex-direction: column;
+}
+.about-section .card .icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   gap: 20px;
 }
-.blog-post .card .image {
-  overflow: hidden;
+.about-section .card .icon img {
+  width: 70px;
+  height: 70px;
 }
-.blog-post .card .image img {
-  width: 100%;
-  height: 300px;
-  transition: 0.5s ease all;
-  position: relative;
-}
-.blog-post .card:hover .image img {
-  scale: 1.1;
-}
-
-.blog-post .card-btn {
-  position: absolute;
-  top: 25px;
-  left: 30px;
-  background-color: var(--light);
-  border-radius: 50px;
-  padding: 2px;
-  width: 100px;
-  border: none;
-  outline: none;
-}
-.blog-post .text a {
-  text-decoration: none;
+.about-section .card .icon h6 {
+  font-size: 23px;
+  font-weight: 500;
   color: var(--dark);
-
-  text-transform: capitalize;
 }
-.blog-post .text a:hover {
-  text-decoration: underline;
+.about-section .card .icon h6 span {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark);
+  display: block;
+  margin-top: 5px;
+}
+
+/* Team Section */
+.team-section .card {
+  border: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+.team-section .card .card-body {
+  padding: 50px;
+}
+.team-section .card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.team-section .card h5 {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--dark);
+  margin: 15px 0 10px;
+}
+.team-section .card h6 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark);
+}
+.team-section .card .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+.team-section .card .social a {
+  font-size: 20px;
+  color: var(--dark);
+  transition: 0.5s ease all;
+}
+.team-section .card .social a:hover {
+  color: var(--primary);
+}
+
+/* Contact Section  */
+.contact-section .card {
+  background: var(--light-alt);
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  height: 100%;
+}
+.contact-section .card .card-body {
+  padding: 50px;
+}
+.contact-section .card .icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.contact-section .card .icon img {
+  width: 60px;
+  height: 60px;
+}
+.contact-section .card .icon h6 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--dark);
+}
+.contact-section .card .icon h6 a {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--dark);
+  display: block;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.contact-section form.card {
+  background: var(--dark);
+  border: 0;
+}
+.contact-section .form-group {
+  margin-bottom: 30px;
+}
+.contact-section .form-label {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--light);
+  margin-bottom: 10px;
+}
+.contact-section .form-control {
+  background: var(--light);
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: var(--dark);
+  font-size: 16px;
+  font-weight: 500;
+}
+.contact-section button {
+  padding: 15px 20px;
+  background: var(--primary);
+  border: 0;
+  outline: 0;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--light);
+  width: 100%;
+}
+
+/* Blog Detail Section */
+.blog-detail-section .image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  margin-bottom: 50px;
+}
+.blog-detail-section .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.blog-detail-section .text p {
+  margin-bottom: 20px;
+}
+.blog-detail-section .text .quote {
+  background: var(--light-alt);
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  border-left: 10px solid var(--primary);
+  margin-bottom: 30px;
+}
+.blog-detail-section .text .quote p {
+  margin-bottom: 0;
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 170%;
+}
+.blog-detail-section .social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: 50px;
+}
+.blog-detail-section .social a {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: var(--dark);
+  background: var(--light-alt);
+  transition: 0.5s ease all;
+}
+.blog-detail-section .social a:hover {
+  background: var(--primary);
+  color: var(--light);
 }
 
 /* Keyframes */

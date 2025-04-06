@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clarity</title>
+    <title>Features - Clarity</title>
 
     <!-- Links -->
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./assets/css/owl.theme.green.min.css" />
@@ -18,7 +19,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" data-aos="fade-down">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="logo" href="./index.html">
@@ -76,7 +77,7 @@
       <div class="container text-center">
         <div class="row justify-content-center">
           <div class="col-lg-7">
-            <div class="text">
+            <div class="text" data-aos="fade-up">
               <h1 class="h1 mb-3">
                 Protecting Your Data with Advanced Security
               </h1>
@@ -104,71 +105,78 @@
       </div>
     </section>
 
-    <section class="section features-section bg-transparent d-none">
+    <!-- Features Section -->
+    <section class="section features-section bg-transparent">
       <div class="container">
         <div class="row g-4">
           <div class="col-lg-4 col-md-6">
-            <div class="card feature-card" style="--card-shade: #d3f5ff">
-              <div class="card-body">
-                <div class="image">
-                  <img
-                    src="./assets/images/features/01.webp"
-                    alt="Visitor History"
-                  />
-                </div>
-                <div class="text">
-                  <a href="./index.html" class="badge">Visitor History</a>
-                  <a href="./index.html">
-                    <h5>Regularly evaluates potential security risks</h5>
-                  </a>
-                  <p>
-                    Securing your digital world: your trusted partner in data
-                    protection with. Lorem ipsum dolor sit amet
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card feature-card" style="--card-shade: #ddd6ff">
-              <div class="card-body">
-                <div class="image">
-                  <img
-                    src="./assets/images/features/02.webp"
-                    alt="Visitor History"
-                  />
-                </div>
-                <div class="text">
-                  <a href="./index.html" class="badge">Visitor History</a>
-                  <a href="./index.html">
-                    <h5>Regularly evaluates potential security risks</h5>
-                  </a>
-                  <p>
-                    Securing your digital world: your trusted partner in data
-                    protection with. Lorem ipsum dolor sit amet
-                  </p>
+            <div data-aos="fade-up">
+              <div class="card feature-card" style="--card-shade: #d3f5ff">
+                <div class="card-body">
+                  <div class="image">
+                    <img
+                      src="./assets/images/features/01.webp"
+                      alt="Visitor History"
+                    />
+                  </div>
+                  <div class="text">
+                    <a href="./index.html" class="badge">Visitor History</a>
+                    <a href="./index.html">
+                      <h5>Regularly evaluates potential security risks</h5>
+                    </a>
+                    <p>
+                      Securing your digital world: your trusted partner in data
+                      protection with. Lorem ipsum dolor sit amet
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="card feature-card" style="--card-shade: #faefe8">
-              <div class="card-body">
-                <div class="image">
-                  <img
-                    src="./assets/images/features/03.webp"
-                    alt="Visitor History"
-                  />
+            <div data-aos="fade-up">
+              <div class="card feature-card" style="--card-shade: #ddd6ff">
+                <div class="card-body">
+                  <div class="image">
+                    <img
+                      src="./assets/images/features/02.webp"
+                      alt="Visitor History"
+                    />
+                  </div>
+                  <div class="text">
+                    <a href="./index.html" class="badge">Visitor History</a>
+                    <a href="./index.html">
+                      <h5>Regularly evaluates potential security risks</h5>
+                    </a>
+                    <p>
+                      Securing your digital world: your trusted partner in data
+                      protection with. Lorem ipsum dolor sit amet
+                    </p>
+                  </div>
                 </div>
-                <div class="text">
-                  <a href="./index.html" class="badge">Banners Clicks</a>
-                  <a href="./index.html">
-                    <h5>Regularly evaluates potential security risks</h5>
-                  </a>
-                  <p>
-                    Securing your digital world: your trusted partner in data
-                    protection with. Lorem ipsum dolor sit amet
-                  </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div data-aos="fade-up">
+              <div class="card feature-card" style="--card-shade: #faefe8">
+                <div class="card-body">
+                  <div class="image">
+                    <img
+                      src="./assets/images/features/03.webp"
+                      alt="Visitor History"
+                    />
+                  </div>
+                  <div class="text">
+                    <a href="./index.html" class="badge">Banners Clicks</a>
+                    <a href="./index.html">
+                      <h5>Regularly evaluates potential security risks</h5>
+                    </a>
+                    <p>
+                      Securing your digital world: your trusted partner in data
+                      protection with. Lorem ipsum dolor sit amet
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -176,59 +184,145 @@
         </div>
       </div>
     </section>
-
-    <!-- blog post section -->
-    <section class="section blog-post d-none">
+    <section class="section features-section pt-0">
       <div class="container">
-        <h3 class="h2 mb-5 text-center">Our Latest Blog</h3>
-        <div class="row justify-content-center">
-          <div class="col-lg-10">
-            <div class="row justify-content-center">
-              <div class="col-lg-6">
-                <div class="card p-3">
-                  <div class="image">
-                    <img src="./assets/images/blog-2.webp" alt="image" />
-                    <button type="button" class="card-btn">Application</button>
-                  </div>
-                  <div class="text">
-                    <p class="mb-3">04 Apr, 2022</p>
-                    <h3>
-                      <a href="#"
-                        >How To Build an application with modern technology</a
-                      >
-                    </h3>
-                    <p class="mt-3">
-                      Nemo vel ad consectetur namut rutrum ex, venenatis
-                      sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum
-                      sem. Ut bibendum lacus vestibulum maximus suscipit.
-                      Quisque vitae nibh iaculis neque bland
-                    </p>
-                  </div>
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h6 class="badge-title">Key Features</h6>
+          <h4 class="h1 my-3 w-50 mx-auto">
+            Discover the Features That Makes clarity Stand Out.
+          </h4>
+          <p class="w-50 mx-auto">
+            Securing your digital world: your trusted partner in data protection
+            with cutting-edge solutions for comprehensive data security.
+          </p>
+        </div>
+
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <div class="feature-image pattern-top" data-aos="fade-up">
+              <img src="./assets/images/features/features.webp" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <h5 class="w-50 mb-3" data-aos="fade-up">
+              In-Depth Explanation of Our Web Security
+            </h5>
+            <p class="w-75 mb-5" data-aos="fade-up">
+              Securing Your Digital World: Your Trusted Partner in Data
+              Protection with Cutting-Edge Solutions for
+            </p>
+
+            <div class="row g-5">
+              <div class="col-md-6">
+                <div class="round-icon bg-primary" data-aos="fade-up">
+                  <img
+                    src="./assets/images/icons/feature-icon-alt.svg"
+                    alt=""
+                  />
                 </div>
+                <h6 data-aos="fade-up">Deleiled user logs</h6>
+                <p data-aos="fade-up">
+                  Our platform regularly logs all user activities including
+                  logins.
+                </p>
               </div>
-              <div class="col-lg-6">
-                <div class="card p-3">
-                  <div class="image">
-                    <img src="./assets/images/blog-1.webp" alt="image" />
-                    <button type="button" class="card-btn">Technology</button>
-                  </div>
-                  <div class="text">
-                    <p class="mb-3">04 Apr, 2022</p>
-                    <h3>
-                      <a href="#"
-                        >How To Build an application with modern technology</a
-                      >
-                    </h3>
-                    <p class="mt-3">
-                      Nemo vel ad consectetur namut rutrum ex, venenatis
-                      sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum
-                      sem. Ut bibendum lacus vestibulum maximus suscipit.
-                      Quisque vitae nibh iaculis neque bland
-                    </p>
-                  </div>
+              <div class="col-md-6">
+                <div class="round-icon bg-light" data-aos="fade-up">
+                  <img src="./assets/images/icons/feature-icon.svg" alt="" />
                 </div>
+                <h6 data-aos="fade-up">Anomaly Detection</h6>
+                <p data-aos="fade-up">
+                  This includes unusual login times and access to restricted
+                  data.
+                </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section features-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <h5 class="w-75 mb-3" data-aos="fade-up">
+              Delivers an All-Encompassing Security Summary.
+            </h5>
+            <p class="mb-5" data-aos="fade-up">
+              Schedule posts in advance and automatically publish across your
+              connected channels. Create content queues and recycle evergreen
+              content for consistent posting
+            </p>
+            <div class="row g-4 mb-5">
+              <div class="col-md-6">
+                <span class="list" data-aos="fade-up">
+                  <i class="far fa-check"></i>
+                  Providing robust security
+                </span>
+              </div>
+              <div class="col-md-6">
+                <span class="list" data-aos="fade-up">
+                  <i class="far fa-check"></i>
+                  Regularly audit user access
+                </span>
+              </div>
+              <div class="col-md-6">
+                <span class="list" data-aos="fade-up">
+                  <i class="far fa-check"></i>
+                  Additionally, enforce Multi-Factor
+                </span>
+              </div>
+              <div class="col-md-6">
+                <span class="list" data-aos="fade-up">
+                  <i class="far fa-check"></i>
+                  Securing your digital world
+                </span>
+              </div>
+            </div>
+
+            <div data-aos="fade-up">
+              <a href="#" class="button">
+                <span>Get Started</span>
+                <div class="icon">
+                  <i class="fal fa-arrow-right"></i>
+                  <i class="fal fa-arrow-right"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="feature-image pattern-bottom" data-aos="fade-up">
+              <img src="./assets/images/features/features-alt.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="card" data-aos="fade-up">
+          <div class="pattern">
+            <img src="./assets/images/patterns/pattern.svg" alt="" />
+            <img src="./assets/images/patterns/cta-section.svg" alt="" />
+          </div>
+          <div class="card-body text-center">
+            <h4 class="h1 w-75 mb-3 mx-auto">
+              Secure Your Data with clarity Protection Solution
+            </h4>
+            <p class="w-50 mx-auto mb-5">
+              Allows you to set thresholds for security parameters and receive
+              real-time alerts when these thresholds are breached.
+            </p>
+
+            <a href="#" class="button">
+              <span>Get Started</span>
+              <div class="icon">
+                <i class="fal fa-arrow-right"></i>
+                <i class="fal fa-arrow-right"></i>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -264,8 +358,8 @@
           <div class="col-lg-2 col-md-4 col-6">
             <h5 class="mb-lg-5 mb-3">Info</h5>
             <ul>
-              <li><a href="./index.html">Blog</a></li>
-              <li><a href="./index.html">Blog Details</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./blog-detail.html">Blog Details</a></li>
               <li><a href="./contact.html">Contact</a></li>
             </ul>
           </div>
@@ -306,6 +400,7 @@
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/app.js"></script>

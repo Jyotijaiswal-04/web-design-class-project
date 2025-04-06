@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clarity</title>
+    <title>Pricing - Clarity</title>
 
     <!-- Links -->
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="./assets/css/owl.theme.green.min.css" />
@@ -18,7 +19,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" data-aos="fade-down">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="logo" href="./index.html">
@@ -71,6 +72,649 @@
       </nav>
     </header>
 
+    <!-- Hero Inner Section -->
+    <section class="section hero-inner">
+      <div class="container text-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="text" data-aos="fade-up">
+              <h1 class="h1 mb-3">
+                Protecting Your Data with Advanced Security
+              </h1>
+              <p class="w-75 mx-auto">
+                Discover cutting-edge solutions for comprehensive data security,
+                ensuring your digital world remains safe and protected
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pattern">
+        <img src="./assets/images/patterns/line-01.svg" alt="" />
+        <img src="./assets/images/patterns/line-02.svg" alt="" />
+        <img src="./assets/images/patterns/line-03.svg" alt="" />
+      </div>
+
+      <div class="image-pattern">
+        <img
+          src="./assets/images/hero-background.svg"
+          alt="Hero Image"
+          class="image"
+        />
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing-section bg-transparent">
+      <div class="container">
+        <div class="toggle mb-5" id="price-toggle" data-aos="fade-up">
+          <span>Monthly</span>
+          <button></button>
+          <span>Yearly</span>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card pricing-card" data-aos="fade-up">
+              <div class="card-body">
+                <h5>Basic Plan</h5>
+                <p>
+                  Ideal for small businesses or individuals looking to secure
+                  their data with fundamental protection features.
+                </p>
+                <h6>
+                  <b>
+                    <span class="amount" data-monthly="29" data-yearly="129">
+                      $29
+                    </span></b
+                  >
+                  per month, billed monthly
+                </h6>
+                <ul>
+                  <li>
+                    <i class="far fa-check"></i>
+                    <span> Basic Threat Detection </span>
+                  </li>
+                  <li>
+                    <i class="far fa-check"></i>
+                    <span> Basic Alerts & Reporting </span>
+                  </li>
+                  <li>
+                    <i class="far fa-check"></i>
+                    <span> Daily Data Backup </span>
+                  </li>
+                  <li>
+                    <i class="far fa-check"></i>
+                    <span> Email Support </span>
+                  </li>
+                  <li>
+                    <i class="far fa-check"></i>
+                    <span> Single User License </span>
+                  </li>
+                </ul>
+
+                <a href="#" class="button">
+                  <span>Get Started</span>
+                  <div class="icon">
+                    <i class="fal fa-arrow-right"></i>
+                    <i class="fal fa-arrow-right"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card pricing-card pricing-card-alt" data-aos="fade-up">
+              <div class="card-body">
+                <h5>
+                  Premium Plan
+                  <div class="badge">Recommended</div>
+                </h5>
+                <p>
+                  Perfect for medium to large businesses requiring security
+                  features and priority support.
+                </p>
+                <h6>
+                  <b>
+                    <span class="amount" data-monthly="49" data-yearly="149">
+                      $49
+                    </span>
+                  </b>
+                  per month, billed monthly
+                </h6>
+                <ul>
+                  <li>
+                    <i class="far fa-check"></i>
+                    <span> Advanced Threat Detection and Remediation</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check"></i>
+                    <span> Real-Time Alerts and Reporting</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check"></i>
+                    <span> Continuous Data Backup and Restore</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check"></i>
+                    <span> 24/7 Priority Support</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check"></i>
+                    <span>
+                      Single User LicenseMulti-User Licenses (Up to 10 Users)
+                    </span>
+                  </li>
+                </ul>
+
+                <a href="#" class="button button-alt">
+                  <span>Get Started</span>
+                  <div class="icon">
+                    <i class="fal fa-arrow-right"></i>
+                    <i class="fal fa-arrow-right"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card pricing-card" data-aos="fade-up">
+              <div class="card-body">
+                <h5>Ultimate Plan</h5>
+                <p>
+                  Perfect for medium to large businesses requiring security
+                  features and priority support.
+                </p>
+                <h6>
+                  <b>
+                    <span class="amount" data-monthly="99" data-yearly="199">
+                      $99
+                    </span>
+                  </b>
+                  per month, billed monthly
+                </h6>
+                <ul>
+                  <li>
+                    <i class="far fa-check"></i>
+                    <span> Advanced Threat Detection and Remediation</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check"></i>
+                    <span> Real-Time Alerts and Reporting</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check"></i>
+                    <span> Continuous Data Backup and Restore</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check"></i>
+                    <span> 24/7 Priority Support</span>
+                  </li>
+                  <li>
+                    <i class="far fa-check"></i>
+                    <span> Multi-User Licenses (Up to 10 Users)</span>
+                  </li>
+                </ul>
+
+                <a href="#" class="button">
+                  <span>Get Started</span>
+                  <div class="icon">
+                    <i class="fal fa-arrow-right"></i>
+                    <i class="fal fa-arrow-right"></i>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section class="section clients-section py-5">
+      <div class="container">
+        <p class="heading text-center mb-5" data-aos="fade-up">
+          Trusted by thousands of companies worldwide
+        </p>
+
+        <div class="slider" data-aos="fade-up">
+          <div class="slides-track">
+            <!-- First slide -->
+            <div class="slide">
+              <img src="./assets/images/logo1.svg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./assets/images/logo2.svg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./assets/images/logo3.svg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./assets/images/logo4.svg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./assets/images/logo5.svg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./assets/images/logo6.svg" alt="" />
+            </div>
+
+            <!-- Second Slide clone items -->
+            <div class="slide">
+              <img src="./assets/images/logo1.svg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./assets/images/logo2.svg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./assets/images/logo3.svg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./assets/images/logo4.svg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./assets/images/logo5.svg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="./assets/images/logo6.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonial-section">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h6 class="badge-title">12000+ Happy Customers</h6>
+          <h4 class="h1 my-3 w-50 mx-auto">Customer Reviews</h4>
+          <p class="w-50 mx-auto">
+            Your Trusted Partner in Data Protection with Cutting-Edge Solutions
+            for Comprehensive Data Security.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="owl-carousel owl-theme testimonial-carousel"
+        data-aos="fade-up"
+      >
+        <div class="item">
+          <div class="card testimonial-card">
+            <div class="card-body">
+              <h5>
+                The granular access controls and detailed user activity tracking
+                have given us unparalleled visibility.
+              </h5>
+              <p>
+                The granular access controls and detailed user activity tracking
+                have given us unparalleled visibility into our system's
+                security. This platform has helped us maintain our data.
+              </p>
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fal fa-star"></i>
+                </div>
+                <span>3.5</span>
+              </div>
+              <div class="info">
+                <div class="avatar">
+                  <img src="./assets/images/testimonial/01.webp" alt="" />
+                </div>
+                <div class="text">
+                  <h6>Marvin Brown</h6>
+                  <b>IT Director at HealthCare</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="card testimonial-card">
+            <div class="card-body">
+              <h5>
+                Enhanced security features that make a real difference in data
+                management.
+              </h5>
+              <p>
+                The granular access controls and detailed user activity tracking
+                have made a significant impact on our system’s security, helping
+                us protect critical data and improve compliance.
+              </p>
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fal fa-star"></i>
+                  <i class="fal fa-star"></i>
+                </div>
+                <span>3.0</span>
+              </div>
+              <div class="info">
+                <div class="avatar">
+                  <img src="./assets/images/testimonial/02.webp" alt="" />
+                </div>
+                <div class="text">
+                  <h6>Sarah Thompson</h6>
+                  <b>Security Manager at FinTech Solutions</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="card testimonial-card">
+            <div class="card-body">
+              <h5>
+                Gives us peace of mind knowing our system is secure and
+                compliant.
+              </h5>
+              <p>
+                The detailed user activity tracking allows us to detect
+                potential security issues before they become problems. The
+                platform is indispensable for maintaining compliance standards.
+              </p>
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span>5.0</span>
+              </div>
+              <div class="info">
+                <div class="avatar">
+                  <img src="./assets/images/testimonial/03.webp" alt="" />
+                </div>
+                <div class="text">
+                  <h6>James Parker</h6>
+                  <b>Compliance Officer at TechCorp</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="card testimonial-card">
+            <div class="card-body">
+              <h5>Simple interface with powerful security features.</h5>
+              <p>
+                We appreciate the intuitive interface that simplifies complex
+                security features. The access controls and activity tracking are
+                easy to configure and monitor.
+              </p>
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fal fa-star"></i>
+                  <i class="fal fa-star"></i>
+                </div>
+                <span>3.2</span>
+              </div>
+              <div class="info">
+                <div class="avatar">
+                  <img src="./assets/images/testimonial/04.webp" alt="" />
+                </div>
+                <div class="text">
+                  <h6>Linda Greer</h6>
+                  <b>Network Administrator at CloudTech</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="card testimonial-card">
+            <div class="card-body">
+              <h5>Comprehensive audit trails that ensure full transparency.</h5>
+              <p>
+                The ability to review detailed user activity logs has been a
+                game-changer for our audit processes. It gives us transparency
+                and helps us track compliance more easily.
+              </p>
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fal fa-star"></i>
+                </div>
+                <span>4.2</span>
+              </div>
+              <div class="info">
+                <div class="avatar">
+                  <img src="./assets/images/testimonial/05.webp" alt="" />
+                </div>
+                <div class="text">
+                  <h6>David King</h6>
+                  <b>Audit Manager at BioMed Solutions</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h6 class="badge-title">FAQ</h6>
+          <h4 class="h1 my-3">Frequently Asked Questions</h4>
+          <p class="w-50 mx-auto">
+            We help businesses streamline their processes, enhance productivity,
+            and achieve their goals through our cutting-edge technologies and
+            tailored services.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item" data-aos="fade-up">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqItem01"
+                  aria-expanded="true"
+                  aria-controls="faqItem01"
+                >
+                  What is two-factor authentication (2FA) and how does it
+                  enhance security?
+                </button>
+                <div id="faqItem01" class="accordion-collapse collapse show">
+                  <div class="accordion-body">
+                    <p>
+                      If you receive a suspicious email, do not click on any
+                      links or download attachments. Verify the sender's email
+                      address and look for signs of phishing, such as
+                      misspellings or unusual requests. If in doubt, contact the
+                      sender directly using a known, trusted method of
+                      communication. Report the email to your IT department or
+                      email provider.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item" data-aos="fade-up">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqItem02"
+                  aria-expanded="false"
+                  aria-controls="faqItem02"
+                >
+                  What should I do if I receive a suspicious email?
+                </button>
+                <div id="faqItem02" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>
+                      Receiving a suspicious email? Don't click on links or
+                      download attachments. Verify the sender's email address
+                      and look for phishing signs, like misspellings or strange
+                      requests. If uncertain, reach out to the sender directly
+                      via a trusted method. Report it to your IT department or
+                      email provider.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item" data-aos="fade-up">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqItem03"
+                  aria-expanded="false"
+                  aria-controls="faqItem03"
+                >
+                  What is encryption and how does it protect my data?
+                </button>
+                <div id="faqItem03" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>
+                      When you get a suspicious email, don't click any links or
+                      download attachments. Verify the sender's email address
+                      and look for phishing signs, such as misspellings or
+                      strange requests. If uncertain, contact the sender using a
+                      reliable method. Report the email to your IT department or
+                      email provider.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item" data-aos="fade-up">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqItem04"
+                  aria-expanded="false"
+                  aria-controls="faqItem04"
+                >
+                  How can I ensure my mobile devices are secure?
+                </button>
+                <div id="faqItem04" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>
+                      If you receive a suspicious email, do not click on any
+                      links or download attachments. Verify the sender's email
+                      address and look for signs of phishing, such as
+                      misspellings or unusual requests. If in doubt, contact the
+                      sender directly using a known, trusted method of
+                      communication. Report the email to your IT department or
+                      email provider.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item" data-aos="fade-up">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqItem05"
+                  aria-expanded="false"
+                  aria-controls="faqItem05"
+                >
+                  What are the common signs of a data breach?
+                </button>
+                <div id="faqItem05" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>
+                      Received a suspicious email? Refrain from clicking any
+                      links or downloading attachments. Verify the sender's
+                      email and check for phishing signs, like misspellings or
+                      odd requests. If unsure, contact the sender via a trusted
+                      method. Report the email to your IT department or email
+                      provider.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item" data-aos="fade-up">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faqItem06"
+                  aria-expanded="false"
+                  aria-controls="faqItem06"
+                >
+                  How can I create a strong password?
+                </button>
+                <div id="faqItem06" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p>
+                      If a suspicious email arrives, do not click on links or
+                      download attachments. Verify the sender's email address
+                      and look for phishing signs, such as typos or unusual
+                      requests. If unsure, contact the sender directly using a
+                      trusted method. Report the email to your IT department or
+                      email provider.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="section cta-section">
+      <div class="container">
+        <div class="card" data-aos="fade-up">
+          <div class="pattern">
+            <img src="./assets/images/patterns/pattern.svg" alt="" />
+            <img src="./assets/images/patterns/cta-section.svg" alt="" />
+          </div>
+          <div class="card-body text-center">
+            <h4 class="h1 w-75 mb-3 mx-auto">
+              Secure Your Data with clarity Protection Solution
+            </h4>
+            <p class="w-50 mx-auto mb-5">
+              Allows you to set thresholds for security parameters and receive
+              real-time alerts when these thresholds are breached.
+            </p>
+
+            <a href="#" class="button">
+              <span>Get Started</span>
+              <div class="icon">
+                <i class="fal fa-arrow-right"></i>
+                <i class="fal fa-arrow-right"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
@@ -101,8 +745,8 @@
           <div class="col-lg-2 col-md-4 col-6">
             <h5 class="mb-lg-5 mb-3">Info</h5>
             <ul>
-              <li><a href="./index.html">Blog</a></li>
-              <li><a href="./index.html">Blog Details</a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./blog-detail.html">Blog Details</a></li>
               <li><a href="./contact.html">Contact</a></li>
             </ul>
           </div>
@@ -143,8 +787,13 @@
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script>
+      testimonialCarousel(".testimonial-carousel");
+      togglePricing();
+    </script>
   </body>
 </html>
