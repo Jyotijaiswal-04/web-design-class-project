@@ -1013,7 +1013,10 @@
 }
 @media (max-width: 1199px) {
 }
-@media (max-width: 992px) {
+@media (max-width: 900px) {
+  .h1 {
+    font-size: 40px;
+  }
 }
 @media (max-width: 767px) {
   .g-5,

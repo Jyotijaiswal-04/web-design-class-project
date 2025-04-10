@@ -19,8 +19,11 @@ const testimonialCarousel = (selector) => {
     dots: false,
     items: 2,
     responsive: {
-      600: {
-        items: 4,
+      820: {
+        items: 2,
+      },
+      430: {
+        items: 1,
       },
     },
   });
